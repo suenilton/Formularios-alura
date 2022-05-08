@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'widget_tweaks',
+    'tempus_dominus',
     'passagens',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -139,3 +141,5 @@ MESSAGE_TAGS = {
 # Alterando a configuração da pasta raiz do apps do projeto.
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT,'..\\apps'))
+
+TEMPUS_DOMINUS_LOCALIZE = True
